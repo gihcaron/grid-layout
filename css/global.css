@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    display: grid;
+    align-items: center; 
+    
+}
+
+
+header{
+    background-color: rgb(87, 87, 255);
+    height: 10rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(70, 146, 142);
+    height: 7rem;
+    margin: 0 1rem 1rem 1rem;
+    text-align: center;
+}   
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "section section aside"
+    "article article aside";
+    gap: 1rem;
+    grid-template-rows: 300px 300px;
+    margin: 0 1rem 1rem 1rem;
+}
+
+section{
+    grid-area: section;
+    background-color: rgb(241, 213, 49);
+    height: 19rem;
+    text-align: center;
+    align-items: center;
+}
+
+article{
+    grid-area: article;
+    background-color: rgb(255, 140, 87);
+    height: 19rem;
+    align-items: center;
+    text-align: center;
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgb(255, 87, 87);
+    height: 38.5rem;
+    align-items: center;
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(87, 87, 255);
+    height: 19rem;
+    align-items: center;
+    text-align: center;
+    margin: 0 1rem 1rem 1rem;
+}  
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
